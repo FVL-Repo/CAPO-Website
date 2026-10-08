@@ -42,7 +42,7 @@ copyButton.addEventListener('click', async () => {
       const success = document.execCommand('copy'); textarea.remove();
       if (!success) throw new Error('Copy unavailable');
     }
-    status.textContent = 'BibTeX copied to clipboard.';
+    status.textContent = 'Citation copied to clipboard.';
     copyButton.textContent = 'Copied!';
     setTimeout(() => {copyButton.textContent = 'Copy';}, 2400);
   } catch {status.textContent = 'Select the citation and copy it with Ctrl+C or ⌘C.';}

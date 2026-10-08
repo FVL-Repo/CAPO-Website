@@ -51,8 +51,7 @@ The site uses relative asset URLs and local fonts, with no runtime CDN dependenc
 ## Publication status
 
 The Code button links to [FVL-Repo/CAPO](https://github.com/FVL-Repo/CAPO). The Paper button remains unlinked pending the arXiv release.
-The BibTeX block temporarily contains the author-requested ActiveMimic placeholder;
-it is not the CAPO citation and should be replaced when the CAPO arXiv entry is available.
+The Citation section contains the CAPO BibTeX entry. Its arXiv identifier is left blank until the arXiv entry is available.
 
 ## Contributing and license
 

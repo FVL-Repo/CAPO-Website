@@ -18,5 +18,5 @@ credentials, access tokens, local environments, or generated preview screenshots
 
 GitHub Pages deploys the repository root on `main`. Maintainers should check the Pages deployment after merging.
 
-When the paper is released, update the Paper button and replace the placeholder
+When the paper is released, update the Paper button and fill in the arXiv identifier in the
 BibTeX entry in `index.html`. Keep the Open Graph and citation metadata consistent with the public URLs.
