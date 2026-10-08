@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="CAPO turns human interventions into autonomous policy improvement for flow-based vision-language-action models, achieving 93.3% mean success across six real-world manipulation tasks.">
+  <meta property="og:title" content="CAPO · Corrective Adjoint Policy Optimization">
+  <meta property="og:description" content="From human interventions to autonomous policy optimization. Real-world reinforcement learning for VLA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fvl-repo.github.io/capo-page/assets/images/teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="citation_title" content="CAPO: Real-World Reinforcement Learning for VLA via Corrective Adjoint Policy Optimization">
+  <meta name="citation_author" content="Guojin Zhong">
+  <meta name="citation_author" content="Weiyao Zhang">
+  <meta name="citation_author" content="Xingyao Lin">
+  <meta name="citation_author" content="Tianyi Lu">
+  <meta name="citation_author" content="Shengqi Xu">
+  <meta name="citation_author" content="Ziyi Ye">
+  <meta name="citation_author" content="Zuxuan Wu">
+  <meta name="citation_author" content="Yugang Jiang">
+  <meta name="citation_pdf_url" content="https://fvl-repo.github.io/capo-page/assets/pdf/capo_arxiv.pdf">
+  <title>CAPO: Real-World Reinforcement Learning for VLA</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#publication">Skip to paper</a>
+<main>
+<section class="video-hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-grid"><video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/usb-insertion.jpg" data-src="assets/videos/usb-insertion.mp4" aria-hidden="true" tabindex="-1"></video>
+<video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/screw-tightening.jpg" data-src="assets/videos/screw-tightening.mp4" aria-hidden="true" tabindex="-1"></video>
+<video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/cup-hanging.jpg" data-src="assets/videos/cup-hanging.mp4" aria-hidden="true" tabindex="-1"></video>
+<video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/peg-in-hole.jpg" data-src="assets/videos/peg-in-hole.mp4" aria-hidden="true" tabindex="-1"></video>
+<video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/card-swiping.jpg" data-src="assets/videos/card-swiping.mp4" aria-hidden="true" tabindex="-1"></video>
+<video class="hero-tile" muted loop playsinline preload="none" poster="assets/posters/usb-insertion-alt.jpg" data-src="assets/videos/usb-insertion-alt.mp4" aria-hidden="true" tabindex="-1"></video></div><div class="hero-overlay"></div>
+  <div class="hero-content"><h1 id="hero-title">CAPO</h1><p>Real-World Reinforcement Learning for VLA<br>via Corrective Adjoint Policy Optimization</p></div>
+  <button class="hero-toggle" id="hero-toggle" type="button" aria-label="Pause background videos">Pause videos</button>
+  <a class="hero-scroll-hint" href="#publication">▾ &nbsp; Scroll down the page to find more &nbsp; ▾</a>
+</section>
+<section class="section publication-header" id="publication">
+  <div class="container publication-container">
+    <h2 class="publication-title">CAPO: Real-World Reinforcement Learning for VLA<br class="title-break"> via Corrective Adjoint Policy Optimization</h2>
+    <div class="publication-authors"><div class="author-row"><span class="author-block"><span class="author-name">Guojin Zhong</span><sup>1,2</sup></span>, <span class="author-block"><span class="author-name">Weiyao Zhang</span><sup>1,2</sup></span>, <span class="author-block"><span class="author-name">Xingyao Lin</span><sup>1,2</sup></span>, <span class="author-block"><span class="author-name">Tianyi Lu</span><sup>1,2</sup></span></div>
+<div class="author-row"><span class="author-block"><span class="author-name">Shengqi Xu</span><sup>1,2</sup></span>, <span class="author-block"><span class="author-name">Ziyi Ye</span><sup>1,2</sup></span>, <span class="author-block"><span class="author-name">Zuxuan Wu</span><sup>1,2,3</sup></span>, <span class="author-block"><span class="author-name">Yugang Jiang</span><sup>1,2</sup></span></div></div>
+    <div class="publication-affiliations"><p><sup>1</sup>Institute of Trustworthy Embodied AI, Fudan University</p><p><sup>2</sup>Shanghai Key Laboratory of Multimodal Embodied AI, <span class="author-block"><sup>3</sup>Neote AI</span></p></div>
+    <div class="publication-links">
+      <button class="resource-button placeholder" type="button" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h4M9 12h6M9 16h6"/></svg><span>Paper</span></button>
+      <a class="resource-button" href="#real-world-demonstrations"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 6 3-6 3z"/></svg><span>Video</span></a>
+      <button class="resource-button placeholder" type="button" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></svg><span>Code</span></button>
+      <a class="resource-button" href="#BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H6v7l-3 2 3 2v7h2m8-18h2v7l3 2-3 2v7h-2"/></svg><span>BibTeX</span></a>
+    </div>
+  </div>
+</section>
+<section class="section teaser" id="teaser" aria-label="Teaser">
+ <div class="container"><figure class="paper-figure "><a href="assets/pdf/teaser.pdf" target="_blank" rel="noopener" aria-label="Open full-resolution teaser PDF"><img src="assets/images/teaser.webp" width="1775" height="743" loading="lazy" alt="CAPO learns action values from human corrections and rejected proposals, then translates value gradients into native flow-policy updates."></a></figure><p class="teaser-caption"><strong>CAPO</strong> turns human interventions into autonomous policy optimization through corrective value learning and adjoint-based policy updates.</p>
+<div class="research-highlights" aria-labelledby="highlights-title">
+  <h3 id="highlights-title">Highlights</h3>
+  <ul>
+    <li><strong>Learn more from each human intervention.</strong> CVL combines the outcome of an executed correction with its preference over the rejected proposal, turning corrective experience into informative action values.</li>
+    <li><strong>Improve the VLA’s native flow policy.</strong> APO translates action-value gradients into local velocity updates. The improved policy keeps its original deployment sampler, with no auxiliary actor or inference-time critic queries.</li>
+  </ul>
+</div></div>
+</section>
+<section class="section" id="abstract"><div class="container abstract-container"><h2 class="section-title centered">Abstract</h2><div class="content justified"><p>Human-in-the-Loop Reinforcement Learning (HiL-RL) offers a practical route for adapting Vision-Language-Action (VLA) models through real-world interaction guided by human interventions. Yet effectively leveraging these interventions remains challenging, their corrective signals must first support informative value learning and then be translated into effective updates of the VLA’s multi-step flow policy. To address these challenges, we propose <strong>Corrective Adjoint Policy Optimization (CAPO)</strong>, a real-world RL framework that couples <strong>Corrective Value Learning (CVL)</strong> with <strong>Adjoint-based Policy Optimization (APO)</strong>. Specifically, CVL exploits human corrections both to learn action values from their observed outcomes and to provide comparative supervision against rejected policy proposals. Guided by the learned critic, APO propagates action-value gradients along the VLA’s native flow trajectories and converts them into local policy updates, while preserving the original deployment sampler. Across six real-world manipulation tasks, CAPO achieves the highest mean autonomous success of 93.3% and the lowest intervention rate among the evaluated methods.</p></div></div></section>
+<section class="section" id="real-world-demonstrations"><div class="container"><h2 class="section-title centered">Real-world demonstrations</h2><p class="section-intro">CAPO learns precise, contact-rich manipulation through real-world interaction and human corrections.</p><div class="demo-grid"><article class="demo"><h3>USB Insertion</h3><p>Align the connector and insert the USB into its port.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/usb-insertion.jpg" aria-label="USB Insertion demonstration"><source src="assets/videos/usb-insertion.mp4" type="video/mp4"><a href="assets/videos/usb-insertion.mp4">Download video</a></video></article>
+<article class="demo"><h3>Screw Tightening</h3><p>Align the tool and tighten the screw.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/screw-tightening.jpg" aria-label="Screw Tightening demonstration"><source src="assets/videos/screw-tightening.mp4" type="video/mp4"><a href="assets/videos/screw-tightening.mp4">Download video</a></video></article>
+<article class="demo"><h3>Cup Hanging</h3><p>Pick up the cup and hang it on the rack.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/cup-hanging.jpg" aria-label="Cup Hanging demonstration"><source src="assets/videos/cup-hanging.mp4" type="video/mp4"><a href="assets/videos/cup-hanging.mp4">Download video</a></video></article>
+<article class="demo"><h3>Peg-in-Hole</h3><p>Align the plug with the socket and complete the insertion.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/peg-in-hole.jpg" aria-label="Peg-in-Hole demonstration"><source src="assets/videos/peg-in-hole.mp4" type="video/mp4"><a href="assets/videos/peg-in-hole.mp4">Download video</a></video></article>
+<article class="demo"><h3>Card Swiping</h3><p>Align the card and swipe it through the reader.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/card-swiping.jpg" aria-label="Card Swiping demonstration"><source src="assets/videos/card-swiping.mp4" type="video/mp4"><a href="assets/videos/card-swiping.mp4">Download video</a></video></article>
+<article class="demo"><h3>USB Insertion — Another Trial</h3><p>A second trial of precise USB alignment and insertion.</p><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/posters/usb-insertion-alt.jpg" aria-label="USB Insertion — Another Trial demonstration"><source src="assets/videos/usb-insertion-alt.mp4" type="video/mp4"><a href="assets/videos/usb-insertion-alt.mp4">Download video</a></video></article></div></div></section>
+<section class="section" id="method"><div class="container"><h2 class="section-title">Method</h2><div class="content"><p>CAPO starts from a task-adapted VLA and alternates human-assisted interaction with two learning stages. <strong>Corrective Value Learning (CVL)</strong> combines temporal-difference learning on executed transitions with preference ranking between human corrections and rejected policy proposals. <strong>Adjoint-based Policy Optimization (APO)</strong> propagates the learned action-value gradients along native flow trajectories to construct local velocity targets, while preserving the original deployment sampler.</p></div><figure class="paper-figure "><a href="assets/pdf/method.pdf" target="_blank" rel="noopener" aria-label="Open full-resolution method PDF"><img src="assets/images/method.webp" width="2155" height="794" loading="lazy" alt="CAPO training pipeline: supervised fine-tuning, human-assisted experience collection, and alternating CVL and APO updates."></a></figure>
+<div class="method-details">
+  <section class="method-subsection" aria-labelledby="cvl-title">
+    <h3 id="cvl-title">Corrective Value Learning (CVL)</h3>
+    <div class="content"><ul class="method-points">
+      <li><strong>Learn from executed outcomes.</strong> Temporal-difference learning grounds action values in the observed outcomes of executed actions.</li>
+      <li><strong>Learn from corrective preferences.</strong> Ranking human corrections above the proposals they replace provides complementary value supervision for policy improvement.</li>
+    </ul></div>
+  </section>
+  <section class="method-subsection" aria-labelledby="apo-title">
+    <h3 id="apo-title">Adjoint-based Policy Optimization (APO)</h3>
+    <div class="content"><ul class="method-points">
+      <li><strong>Translate value guidance into policy updates.</strong> APO carries action-value gradients backward along native flow trajectories to construct local velocity targets.</li>
+      <li><strong>Stabilize and focus refinement.</strong> A phase-wise reference stabilizes updates, while terminal-interval matching focuses refinement on later generation steps.</li>
+      <li><strong>Preserve native deployment.</strong> The updated VLA retains its original sampler, without an auxiliary actor or inference-time critic guidance.</li>
+    </ul></div>
+  </section>
+</div>
+</div></section>
+<section class="section" id="experiments"><div class="container"><h2 class="section-title">Experiments</h2>
+ <section class="experiment-subsection" id="tasks"><h3>Tasks</h3><div class="content"><p>We evaluate CAPO on six real-world manipulation tasks: USB Insertion, Screw Tightening, Cup Hanging, Block Stacking, Peg-in-Hole, and Card Swiping. These tasks require precise alignment and contact-rich control, using 30–50 demonstrations and 40–100 minutes of active collection per task.</p></div><figure class="paper-figure task-figure"><a href="assets/pdf/task_appendix.pdf" target="_blank" rel="noopener" aria-label="Open full-resolution task appendix PDF"><img src="assets/images/task_appendix.webp" width="2126" height="2637" loading="lazy" alt="Six real-world task setups and goals: USB insertion, screw tightening, cup hanging, block stacking, peg-in-hole, and card swiping."></a></figure></section>
+ <section class="experiment-subsection" id="results"><h3>Results</h3><div class="content"><p>CAPO achieves <strong>93.3% mean autonomous success</strong> across the six tasks and the <strong>lowest intervention ratio among the evaluated methods</strong>. Mean final success exceeds CVL+QAM by <strong>8.3 percentage points</strong> and RLToken by <strong>21.7 percentage points</strong>. The results below compare autonomous success and human intervention across CAPO, HIL-SERL, EXPO-FT, RLToken, CVL+AWM, and CVL+QAM.</p></div><figure class="paper-figure results-figure"><a href="assets/pdf/learning_curves_Q1.pdf" target="_blank" rel="noopener" aria-label="Open full-resolution experiment results PDF"><img src="assets/images/learning_curves_Q1.webp" width="2623" height="2166" loading="lazy" alt="Results for six tasks comparing autonomous success rates and intervention ratios over training time across six methods."></a></figure></section>
+</div></section>
+<section class="section" id="BibTeX"><div class="container"><h2 class="section-title">BibTeX</h2><div class="citation-block"><button id="copy-citation" class="copy-button" type="button" aria-label="Copy BibTeX">Copy</button><pre><code id="bibtex">@article{lin2026activemimic,
+  title={ActiveMimic: Egocentric Video Pretraining with Active Perception},
+  author={Lin, Xingyao and Zhong, Guojin and Lu, Tianyi and Ye, Ziyi and Zhu, Yichen and Wu, Zuxuan and Jiang, Yu-Gang},
+  journal={arXiv preprint arXiv:2606.06194},
+  year={2026}
+}</code></pre></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
+</main>
+<footer class="footer"><div class="container"><p>This website is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br>Adapted from the <a href="https://activemimic.github.io/" target="_blank" rel="noopener">ActiveMimic</a> website (<a href="https://github.com/activemimic/activemimic.github.io" target="_blank" rel="noopener">source</a>), based on <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a> (<a href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">source</a>).</p></div></footer>
+</body>
+</html>
