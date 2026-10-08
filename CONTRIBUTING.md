@@ -18,5 +18,5 @@ credentials, access tokens, local environments, or generated preview screenshots
 
 GitHub Pages deploys the repository root on `main`. Maintainers should check the Pages deployment after merging.
 
-When the paper and research code are released, update the Paper and Code buttons and replace the placeholder
+When the paper is released, update the Paper button and replace the placeholder
 BibTeX entry in `index.html`. Keep the Open Graph and citation metadata consistent with the public URLs.

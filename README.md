@@ -2,11 +2,11 @@
 
 **Real-World Reinforcement Learning for VLA via Corrective Adjoint Policy Optimization**
 
-[Project website](https://fvl-repo.github.io/capo-page/)
+[Project website](https://fvl-repo.github.io/CAPO-Website/)
 
 This repository hosts the CAPO research project website. It is owned by
 [FVL-Repo](https://github.com/FVL-Repo) and maintained by [zgj77](https://github.com/zgj77).
-It contains the project page and its media assets; the research implementation will be released separately.
+It contains the project page and its media assets. The research implementation is available in [FVL-Repo/CAPO](https://github.com/FVL-Repo/CAPO).
 
 ## Local preview
 
@@ -43,14 +43,14 @@ unused assets, local screenshots, and reference-site snapshots are excluded.
 ## Deployment
 
 GitHub Pages publishes the root directory of `main` at:
-https://fvl-repo.github.io/capo-page/
+https://fvl-repo.github.io/CAPO-Website/
 
 Changes merged or pushed to `main` trigger publication. Keep `.nojekyll` to serve the files as a static site.
 The site uses relative asset URLs and local fonts, with no runtime CDN dependencies.
 
 ## Publication status
 
-The Paper and Code buttons are intentionally unlinked pending release.
+The Code button links to [FVL-Repo/CAPO](https://github.com/FVL-Repo/CAPO). The Paper button remains unlinked pending the arXiv release.
 The BibTeX block temporarily contains the author-requested ActiveMimic placeholder;
 it is not the CAPO citation and should be replaced when the CAPO arXiv entry is available.
 
